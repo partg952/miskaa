@@ -1,0 +1,58 @@
+
+.App{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: center;
+  margin-top: 10px;
+  height:100vh;
+  overflow-y: auto;
+  /* background-color: blue; */
+}
+button img{
+  height:50px;
+
+}
+button{
+  background-color: transparent;
+  border:0;
+  outline:none;
+  display:flex;
+  margin-left: auto;
+  transition: all 700ms ease-in-out;
+  transform: rotate(-360deg);
+  
+}
+button:active{
+  transform:rotate(360deg);
+}
+#countries{
+  width:310px;
+  position:relative;
+  height: 210px;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  background-color:white;
+  margin:10px;
+  
+}
+#countries:hover > div{
+  visibility: visible;
+  transform:translateY(-17px);
+  cursor: pointer;
+}
+
+
+
+
+#countries div{
+  transition: all 100ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.524);
+  height:100%;
+  width:100%;
+  text-align:center;
+  visibility: hidden;
+  color:white;
+  font-weight: bolder;
+  object-fit:contain;
+}
